@@ -1,4 +1,4 @@
-name: Build ImmortalWrt for N1
+name: make .config
 
 on:
   workflow_dispatch:
@@ -6,9 +6,8 @@ on:
       ssh:
         description: 'SSH connection to Actions'
         required: false
-        default: 'false'
-  schedule:
-    - cron: "0 0 1,16 * *"
+        default: 'true'
+
 
 env:
   REPO_URL: https://github.com/immortalwrt/immortalwrt
