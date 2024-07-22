@@ -33,6 +33,8 @@ rm -rf feeds/luci/applications/luci-app-passwall
 
 # Add packages
 git clone --depth=1 https://github.com/ophub/luci-app-amlogic package/amlogic
+merge_package https://github.com/lxiaya/openwrt-homeproxy openwrt-homeproxy	
+merge_package https://github.com/pmkol/openwrt-mihomo openwrt-mihomo
 
 #MosDns
 rm -rf feeds/packages/net/mosdns
