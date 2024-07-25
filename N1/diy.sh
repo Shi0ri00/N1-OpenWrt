@@ -34,12 +34,7 @@ rm -rf feeds/luci/applications/luci-app-passwall
 # Add packages
 git clone --depth=1 https://github.com/ophub/luci-app-amlogic package/amlogic
 merge_package https://github.com/vernesong/OpenClash OpenClash/luci-app-openclash
-
-#MosDns
-rm -rf feeds/packages/net/mosdns
-rm -rf feeds/luci/applications/luci-app-mosdns
-merge_package https://github.com/sbwml/luci-app-mosdns luci-app-mosdns
-merge_package https://github.com/sbwml/luci-app-mosdns luci-app-mosdns/mosdns
+merge_package https://github.com/morytyann/OpenWrt-mihomo Openwrt-mihomo
 
 #argon theme
 rm -rf feeds/luci/themes/luci-theme-argon
