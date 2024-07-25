@@ -88,7 +88,7 @@ jobs:
     - name: Telegram notification
       run: |
         MSG="
-        打包时间：${{ env.DATE }}
+        编译时间：${{ env.DATE }}
         OpenWrt 更新信息：${{ env.useVersionInfo }}
         ${{ env.REPO_BRANCH }} 编译完成
         "
