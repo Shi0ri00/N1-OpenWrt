@@ -6,7 +6,7 @@ sed -i 's|/bin/login|/bin/login -f root|g' feeds/packages/utils/ttyd/files/ttyd.
 # Default IP
 sed -i 's/192.168.1.1/10.0.0.2/g' package/base-files/files/bin/config_generate
 
-rm -rf package/custom; mkdir 
+rm -rf package/custom; mkdir -p package/custom
 
 # Remove packages
 rm -rf feeds/luci/applications/luci-app-passwall
